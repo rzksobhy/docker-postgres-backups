@@ -7,12 +7,14 @@
 : ${PGHOST:=postgres}
 : ${PGUSER:=postgres}
 : ${PGPORT:=5432}
+: ${PGNAME:=${PGHOST}}
 
 export BACKUP_KEEP_DAYS
 export PGHOST
 export PGUSER
 export PGPORT
-export PGPASS
+export PGPASSWORD
+export PGNAME
 
 pg_dump --version
 
